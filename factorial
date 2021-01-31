@@ -1,0 +1,44 @@
+
+let x;
+const factorial = (x) => {
+ 
+  if (x === 0) {
+    
+    return 1;
+    
+  }
+ 
+  else {
+    
+return x * factorial(x - 1);
+   
+  }
+  
+}
+
+
+let chaine = factorial(x).toString();
+let x = ",";
+
+const add = (chaine, x) =>{
+  
+  let y = "";
+  
+for(let i = 0; i <chaine.length; i++) {
+ 
+  
+  if((i%3 === 0)&&(i != chaine.length-1)){
+    
+ y +=  chaine[i] + x;
+    
+  }else{
+    
+    y += chaine[i];
+    
+  }
+   
+}
+  
+  return y;
+
+}
